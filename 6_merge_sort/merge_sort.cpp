@@ -8,6 +8,7 @@
 void merge(std::vector<int> &v, int start_l, int stop_l, int start_r,
            int stop_r) {
   // Extract the sorted subvectors
+  // 存储 子 vector
   std::vector<int> sorted_left(begin(v) + start_l, begin(v) + stop_l + 1);
   std::vector<int> sorted_right(begin(v) + start_r, begin(v) + stop_r + 1);
   
