@@ -54,7 +54,7 @@ node *BinarySearchTree::insert_node(node *n, int d) {
     // case that we traverse the left path
     }else if(d < n->data) {
         cout << "L";
-        n->left = insert_node(n->left,d);
+        n->left = insert_node(n->left, d);
 
     // case that we traverse the right path
     }else if(d > n->data) {
@@ -62,9 +62,12 @@ node *BinarySearchTree::insert_node(node *n, int d) {
         n->right = insert_node(n->right,d);
 
     // case that we duplicate entries(illegl)
-    }else {
+    }else{
         assert(false);
     }
+
+
+    return n;
 }
 
 
@@ -79,12 +82,12 @@ node *BinarySearchTree::search(int d) {
     while(temp != nullptr) {
         // if it is, return the node we are looking for    
         if(d == temp->data) {
-            cout << " X ";
+            cout << " X " << endl;
             return temp;
         }else if(d < temp->data) {
             cout << "L";
             temp = temp->left;
-        }else if(d > temp->data) {
+        }else{
             cout << "R";
             temp = temp->right;
         }
