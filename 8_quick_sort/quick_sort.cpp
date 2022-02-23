@@ -9,11 +9,11 @@ using namespace std;
 // --------------------------
 // quick sort implementation
 // --------------------------
-void quick_sort(std::vector<int> &v,  begin, int end) {
+// void quick_sort(std::vector<int> &v,  begin, int end) {
    // wreite the implementation here
-   print(v);
 
-}
+
+// }
 
 // Helper function to print the vector contents
 void print(const std::vector<int> &values) {
@@ -39,9 +39,8 @@ int main() {
   std::cout << "The random numbers are: " << std::endl;
   print(values);
 
-
   // Sort the vector
-  quick_sort(values,values.begin(),values.end() );
+  // quick_sort(values,values.begin(),values.end() );
 
   std::cout << std::endl;
   // Print ending values
